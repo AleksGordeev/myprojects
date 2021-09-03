@@ -1,10 +1,6 @@
 /* алгоритм*/
 var number1Input = document.getElementById('number1');
 var number2Input = document.getElementById('number2');
-var numberPlusButton = document.getElementById('plusBtn');
-var numberMinusButton = document.getElementById('minusBtn');
-var numberMultiplyButton = document.getElementById('multiplyBtn');
-var numberDivideButton = document.getElementById('divideBtn');
 
 var getNumberFromInput = function (inputParam) {
     var valueAsString = inputParam.value;
@@ -27,7 +23,6 @@ var onOperationBtnClick = function (e) {
     var operationValue = pressedOperationButton.value;
     var numbersValuesObj = getNumbers();
 
-
     if (operationValue == '+') {
         var resultValue = numbersValuesObj.num1 + numbersValuesObj.num2
     } else if (operationValue == '-') {
@@ -42,26 +37,14 @@ var onOperationBtnClick = function (e) {
     window.alert(resultValue);
 }
 
-//plus button logic
-var onClickPlusButton = function () {
-
+//
+var addOperationListenerForButtonById = function (id) {
+    var btn = document.getElementById(id);
+    btn.addEventListener('click', onOperationBtnClick);
 }
-numberPlusButton.addEventListener('click', onOperationBtnClick);
 
-//minus button logic
-var onClickMinusButton = function () {
+var operationButtons = document.querySelectorAll('.it-for-js-operation-btn');
 
+for (var i = 0; i < operationButtons.length; i++) {
+    addOperationListenerForButtonById(operationButtons[i].id);
 }
-numberMinusButton.addEventListener('click', onOperationBtnClick);
-
-//multiply button logic
-var onClickMultiplyButton = function () {
-}
-numberMultiplyButton.addEventListener('click', onOperationBtnClick);
-
-//divide button logic
-var onClickDivideButton = function () {
-}
-numberDivideButton.addEventListener('click', onOperationBtnClick);
-
-
