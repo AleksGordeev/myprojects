@@ -1,0 +1,31 @@
+.maindiv {
+    width: 250px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+    align: center;
+}
+
+.input-text-area {
+    width: 220px;
+    margin: 0 auto;
+    align border: 1px solid black;
+    padding: 5px;
+    align: center;
+}
+
+.inner-items-left {
+    width: 120px;
+    margin: 0 auto;
+    align border: 1px solid black;
+    padding: 5px;
+    align: left;
+}
+
+.inner-items-right {
+    width: 120px;
+    margin: 0 auto;
+    align border: 1px solid black;
+    padding: 5px;
+    align: right;
+}
