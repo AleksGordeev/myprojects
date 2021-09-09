@@ -2,11 +2,27 @@
 
 <div class='maindiv'>
     <div class='input-text-area'>Email:</div>
-    <div class='input-text-area'><input type="text" placeholder="mail@mail.ru" id="mail_user"></div>
+    <div class='input-text-area'>
+        <input type="text" placeholder="mail@mail.ru" id="mail-user" class='hi'></div>
     <div class='input-text-area'>Password:</div>
-    <div class=' input-text-area '><input type="text" placeholder="******" id="password_user"></div>
+    <div class=' input-text-area '>
+        <input type="text" placeholder="******" id="password-user"></div>
     <div>
-        <div class='inner-items-left'><input type="checkbox" id="check_remember"> remember me</div>
-        <div class='inner-items-right'><button id="login_btn">Log In</button></div>
+        <div class='inner-items-left'><input type="checkbox" id="check-remember"> remember me</div>
+        <div class='inner-items-right'><button id="login-btn">Log In</button></div>
     </div>
 </div>
+
+<script>
+    var mailUser = 'mail-user';
+    var passwordUser = 'password-user';
+    var checkStatus = 'check-remember';
+    var loginBtn = 'login-btn';
+
+    var mailUserEl = document.getElementById('mail-user');
+    var passwordUserEl = document.getElementById('password-user');
+    var checkStatusEl = document.getElementById('check-remember');
+    var loginBtnEl = document.getElementById('login-btn');
+
+    window.alert(mailUserEl.className);
+</script>
