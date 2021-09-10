@@ -1,31 +1,46 @@
 .maindiv {
-    width: 250px;
+    width: 350px;
+    height: 440px;
     margin: 0 auto;
     border: 1px solid black;
     padding: 20px;
-    align: center;
+    float: center;
 }
 
 .input-text-area {
-    width: 220px;
+    width: 320px;
     margin: 0 auto;
-    align border: 1px solid black;
     padding: 5px;
-    align: center;
+    float: center;
+}
+
+.input-img-area {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 5px;
+    float: center;
+}
+
+.actio-container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 5px;
+    float: center;
 }
 
 .inner-items-left {
     width: 120px;
     margin: 0 auto;
-    align border: 1px solid black;
-    padding: 5px;
-    align: left;
+    padding: 20px;
+    float: left;
+    text-align: left;
 }
 
 .inner-items-right {
     width: 120px;
     margin: 0 auto;
-    align border: 1px solid black;
-    padding: 5px;
-    align: right;
+    padding: 20px;
+    text-align: right;
+    float: right;
 }
