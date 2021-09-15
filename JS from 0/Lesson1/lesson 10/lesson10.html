@@ -1,76 +1,49 @@
 <link rel="stylesheet" href="css/index.css">
 
-<div class='maindiv'>
+<div class="global-div">
 
-    <div>
-        <div class='input-text-area'>First name</div>
-        <div class='input-text-area' id='test-inner'>
-            <img src="https://image.shutterstock.com/image-vector/user-login-authenticate-icon-human-260nw-1365533969.jpg" alt="userImage" id="user-picture">
-        </div>
-    </div>
-
-    <div>
-        <div class='input-text-area'>First name</div>
-        <div class='input-text-area'>
-            <input type="text" placeholder="Ivan" id="first-name-user" class='input-text-area' value="Ivan">
-        </div>
-    </div>
-    <div>
-        <div class='input-text-area'>Last anme</div>
-        <div class='input-text-area'>
-            <input type="text" placeholder="Ivanov" id="last-name-user" class='input-text-area' value="Ivanov">
-        </div>
-    </div>
-    <div>
-        <div class='input-text-area'>Adress</div>
-        <div class='input-text-area'>
-            <input type="text" placeholder="Pushkina str." id="adress" class='input-text-area' value="Pushkina str.">
-        </div>
-    </div>
-
-    <div class='input-text-area'>
-        <select id="selected-city">
-            <option>Москва</option>
-            <option>Красноярск</option>
-            <option selected value="m">Минск</option>
-            <option>Новосибирск</option>
-          </select>
-    </div>
-
-    <div>
-        <div class='input-text-area'>Email:</div>
-        <div class='input-text-area' id='wrong-email'>
-            <input type="text" placeholder="mail@mail.ru" id="mail-user" class='input-text-area' value='mail@mail.ru'>
-        </div>
-    </div>
-
-    <div>
-        <div class='input-text-area'>
-            <textarea id="textarea-user">
-                текст
-              </textarea>
-        </div>
-
-    </div>
-
-    <div class="action-container">
+    <div class='left-part'>
+        <div><img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG.png" alt="user photo" id='user-photo' class='user-photo'></div>
+        <div>Sex</div>
         <div>
-            <div class='input-text-area'>Password:</div>
-            <div class=' input-text-area '>
-                <input type="text" placeholder="******" id="password-user" class='input-text-area' value="88888888"> <br>
-            </div>
+            <form>
+                <input type="radio" id="sexChoiceMale" name="sex" value="male">
+                <label for="sexChoice1">Male</label>
+
+                <input type="radio" id="sexChoiceFemale" name="sex" value="female">
+                <label for="contactChoice2">Female</label>
+
+        </div>
+        <div> <input type="checkbox" id="singleCheck" name="singleChecker">
+            <label for="singleCheck">Single</label>
         </div>
 
-        <div>
-            <div class='inner-items-left'>
-                <input type="checkbox" id="check-remember"> remember me<br/>
-            </div>
-            <div class='inner-items-right'>
-                <button id="login" class=' '>Log In</button>
-            </div>
-        </div>
     </div>
 
+    <div class='right-part'>
+        <div>
+            <div>First Name</div>
+            <div><input type="text" placeholder="Ivanov" id="first-name-user" class='input-text-area'></div>
+        </div>
+        <div>
+            <div>Second Name</div>
+            <div><input type="text" placeholder="Ivanov" id="last-name-user" class='input-text-area'></div>
+        </div>
+        <div>
+            <div>City</div>
+            <div><select name="selectCity" id="city-Selector">
+                <option value="москва">Москва</option>
+                <option value="красноярск">красноярск</option>
+                <option value="новосибирск">новосибирск</option>
+                <option value="екат">екат</option>
+            </select></div>
+        </div>
+        <div>
+            <div>About me</div>
+            <div><textarea name="" placeholder="Напишите о себе" id="" cols="30" rows="10"></textarea></div>
+        </div>
+
+    </div>
 
 </div>
 
