@@ -44,3 +44,7 @@
     text-align: right;
     float: right;
 }
+
+.error {
+    border: red 1px solid;
+}
