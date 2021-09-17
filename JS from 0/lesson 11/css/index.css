@@ -1,0 +1,40 @@
+.login-change {
+    background-color: #4CAF50;
+    transform: rotate(45deg);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.global-div {
+    border: 1px solid gray;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    padding: 5px;
+}
+
+.left-part {
+    border: 1px solid gray;
+    width: 280px;
+    height: auto;
+    float: left;
+    padding: 5px;
+}
+
+.right-part {
+    border: 1px solid gray;
+    width: 280px;
+    height: auto;
+    float: right;
+    padding: 5px;
+}
+
+.user-photo {
+    width: 100px;
+    height: 100px;
+}
