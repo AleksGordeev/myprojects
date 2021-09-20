@@ -1,6 +1,6 @@
 .maindiv {
     width: 350px;
-    height: 460px;
+    height: 660px;
     margin: 0 auto;
     border: 1px solid black;
     padding: 20px;
@@ -47,4 +47,19 @@
 
 .error {
     border: red 1px solid;
+}
+
+.hide {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.reveal {
+    width: 400px;
+    height: 400px;
+}
+
+.zero-width {
+    width: 100px;
 }

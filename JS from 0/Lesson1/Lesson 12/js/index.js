@@ -1,3 +1,99 @@
+function changeClassFunction(idToChange, classToChange) {
+    let elToChange = document.getElementById(idToChange);
+    if (idToChange != null && classToChange != null) {
+
+        elToChange.className = classToChange;
+    };
+}
+
+changeClassFunction('first-name-user', 'hide');
+
+function invizTime() {
+    changeClassFunction('picture-to-change', 'zero-width');
+};
+
+function changeClassFunction(idToChange, classToChange) {
+    let elToChange = document.getElementById(idToChange);
+    if (idToChange != null && classToChange != null) {
+
+        elToChange.className = classToChange;
+    };
+}
+
+
+
+setTimeout(invizTime, 1000);
+
+
+/*
+function deleteFunction(idToDel) {
+    let elToDel = document.getElementById(idToDel);
+    if (idToDel != null) {
+
+        elToDel.remove();
+    };
+}
+
+deleteFunction('1first-name-user');
+
+
+/*
+function setError(idName) {
+
+    var nameUser = document.getElementById(idName);
+    nameUser.className = 'error';
+};
+
+var loginButton = document.getElementById('login');
+loginButton.onclick = function() {
+    setError('first-name-user');
+};
+
+function getSumm(a, b) {
+    a = Number(a);
+    b = Number(b);
+    let summ = a + b;
+    return summ;
+    console.log(summ);
+};
+
+function sayHello() {
+    window.alert('My name');
+};
+
+
+
+function timeoutError() {
+    setError('last-name-user');
+};
+
+setTimeout(timeoutError, 2000);
+
+function changePicture(inputParam) {
+    let pictureToggle = document.getElementById('inviz-pict');
+    pictureToggle.className = inputParam;
+};
+
+var hideButton = document.getElementById('hide-btn');
+hideButton.onclick = function() {
+    changePicture('hide');
+};
+
+var revealButton = document.getElementById('rev-btn');
+revealButton.onclick = function() {
+    changePicture('reveal');
+};
+
+var i = 0;
+
+function plusIteration() {
+    i++;
+    let pluserMonitor = document.getElementById('password-user');
+    pluserMonitor.value = i;
+    console.log(i);
+
+}
+
 /*
 var firstNameUSer = document.getElementById('first-name-user');
 firstNameUSer.value = 'Vovan';
@@ -54,7 +150,7 @@ changeValue('jopa');
 changeValue('mira');
 */
 
-function setError() {
+/*function setError() {
     var nameUser = document.getElementById('first-name-user');
     nameUser.className = 'error';
 
@@ -63,10 +159,16 @@ function setError() {
 
     var adressUser = document.getElementById('adress');
     adressUser.className = 'error';
+
 };
+*/
 
-setError();
+//setInterval(plusIteration, 1000);
 
+
+//setError();
+
+//let timerId = setTimeout()
 
 
 
