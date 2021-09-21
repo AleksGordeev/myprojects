@@ -1,0 +1,15 @@
+.jskmb-calculator {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: beige;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.jskmb-calculator .operations-block button {
+    height: 40px;
+    width: 40px;
+    font-size: 2em;
+    margin: 20px;
+}
